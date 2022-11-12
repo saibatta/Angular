@@ -1,0 +1,9 @@
+<header class="header">Header {{title}}</header>
+<div class="content" role="main">
+
+  <div>
+    <app-routing01 [ch_title]="title" (changeTitle)="parentChangeTitle($event)"></app-routing01>
+  </div>
+</div>
+<footer class="footer">Footer</footer>
+<router-outlet></router-outlet>
